@@ -1,0 +1,52 @@
+/*parte mobile */
+
+@media screen and (max-width: 375px) {
+    
+    img {
+        width: 300px;
+    }
+
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 64px;
+    }
+
+    .button {
+        display: block;
+        margin: 20px;
+    }
+
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+} 
+
+
+@media screen and (max-width: 414px) {
+   
+    img {
+        width: 200px;
+    }
+
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

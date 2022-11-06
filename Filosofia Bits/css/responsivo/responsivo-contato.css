@@ -1,0 +1,62 @@
+/*parte mobile */
+
+@media screen and (max-width: 390px) {
+    .button {
+        font-size: 20px;
+    }
+
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .modal {
+        padding: 30px;
+    }
+
+    .fechar {
+        top: -7px;
+        right: -4px;
+    }
+
+    .texto-discord{
+        display: none;  
+    }
+
+    .link-discord {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    
+    .button {
+        font-size: 20px;
+    }
+
+   
+
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .modal {
+        padding: 30px;
+    }
+
+    .fechar {
+        top: -7px;
+        right: -4px;
+    }
+
+    .texto-discord{
+        display: none;  
+    }
+
+    .link-discord {
+        display: none;
+    }
+
+}
+
+    
