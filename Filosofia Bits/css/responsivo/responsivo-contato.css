@@ -59,4 +59,40 @@
 
 }
 
+@media screen and (max-width: 700px) {
+
+    .texto-discord{
+        display: none;  
+    }
+
+    .link-discord {
+        display: none;
+    }
+
+    .modal {
+        padding: 80px;
+    }
+
+}
+
+ /* parte tablet */
+
+@media screen and (max-width: 949px) {
     
+    .button {
+        font-size: 20px;
+    }
+
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .modal {
+        padding: 60px;
+    }
+
+    .fechar {
+        top: -7px;
+        right: -0.1px;
+    } 
+}

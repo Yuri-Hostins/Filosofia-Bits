@@ -1,0 +1,24 @@
+/*parte mobile */
+
+@media screen and (max-width: 414px) {
+    .botao_rede-mobile {
+        color: #a52a2a;
+        display: block;
+    }
+
+    .icon {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+}   
+/* parte tablet */
+
+@media screen and (max-width: 949px) {
+    
+    .botao_rede-tablet {
+        color: #a52a2a;
+        display: block;
+    }
+}

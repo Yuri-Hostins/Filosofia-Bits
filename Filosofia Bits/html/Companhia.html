@@ -17,7 +17,9 @@
 		<link rel="stylesheet" href="../css/Companhia/equipe.css">
 		<link rel="stylesheet" href="../css/Companhia/aviso.css">
         <link rel="stylesheet" href="../css/Companhia/rodape.css">
+		<link rel="stylesheet" href="../css/Companhia/servicos.css">
 		<link rel="stylesheet" href="../css/responsivo/companhia/responsivo-navbar.css">
+		<link rel="stylesheet" href="../css/responsivo/companhia/responsivo-servicos.css">
 		<link rel="stylesheet" href="../css/back_to_top/back-top.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -49,25 +51,25 @@
                 </div>
 				
 					
-				<section class="">
-					<div id="main_contato">
+				<section>
+					<div>
 						<div id="content">
 				
-							<span class="slide_companhia">
-								<a class="link_hamburguer" href="#" onClick="openSlideMenu()">
+							<span class="slide_companhia slide_companhia-tablet">
+								<a class="link_hamburguer link_hamburguer-tablet" href="#" onClick="openSlideMenu()">
 								<i class="fas fa-bars"></i>
 								</a>
 								
 							</span>
 					
-							<div id="menu" class="nav_hamburguer">
-								<a href="#" class="close link_hamburguer" onClick="closeSlideMenu()">
-								<i class="fas fa-times"></i>oi</a>
-								<a class="link_hamburguer" href="../index.html"><strong>home</strong></a>
-                        		<a class="link_hamburguer" href="Filosofos.html"><strong>filosofos</strong></a>
-                        		<a class="link_hamburguer" href="felicidade.html"><strong>felicidade</strong></a>
-                        		<a class="link_hamburguer" href="mitos_gregos.html"><strong>mitos gregos</strong></a>
-                        		<a class="link_hamburguer" href="contato.html"><strong>contato</strong></a>
+							<div id="menu" class="nav_hamburguer nav_hamburguer-tablet">
+								<a href="#" class="close close-tablet link_hamburguer link_hamburguer-tablet" onClick="closeSlideMenu()">
+								<i class="fas fa-times"></i></a>
+								<a class="link_hamburguer link_hamburguer-tablet" href="../index.html"><strong>home</strong></a>
+                        		<a class="link_hamburguer link_hamburguer-tablet" href="Filosofos.html"><strong>filosofos</strong></a>
+                        		<a class="link_hamburguer link_hamburguer-tablet" href="felicidade.html"><strong>felicidade</strong></a>
+                        		<a class="link_hamburguer link_hamburguer-tablet" href="mitos_gregos.html"><strong>mitos gregos</strong></a>
+                        		<a class="link_hamburguer link_hamburguer-tablet" href="contato.html"><strong>contato</strong></a>
 							</div>
 						</div>
 					</div>
@@ -79,34 +81,45 @@
 
         <section id="sobre">
             <div>
-                <h2 class="titulo-principal"><strong><em>Sobre</em></strong></h2>
-                <p class="texto_sobre"><strong>Esse é o nosso site de filosofia, Sobre os <a class="link" href="Filosofos.html"> Filósofos</a>, <a class="link" href="felicidade.html"> Felicidade</a> e <a class="link" href="mitos_gregos.html">Mito Gregos</a>.</strong></p>
+                <h2 class="titulo-principal titulo-principal-tablet"><strong><em>Sobre</em></strong></h2>
+                <p class="texto_sobre texto_sobre-tablet"><strong>Esse é o nosso site de filosofia, Sobre os <a class="link" href="Filosofos.html"> Filósofos</a>, <a class="link" href="felicidade.html"> Felicidade</a> e <a class="link" href="mitos_gregos.html">Mito Gregos</a>.</strong></p>
             </div>
 		</section>
 			
 			<hr>
 		<section id="equipe">
             <div>
-                <h2 class="titulo-principal"><strong><em>Nossa Equipe</em></strong></h2>
+                <h2 class="titulo-principal titulo-principal-tablet"><strong><em>Nossa Equipe</em></strong></h2>
 				
-				<div class="imagem">
-					<p class="texto_equipe"><strong><em>Yuri Hostins:</em></strong></p>
+				<section class="imagem">
+					<p class="texto_equipe texto_equipe-tablet"><strong><em>Yuri Hostins:</em></strong></p>
 					<figure>
 						<img src="../img/yuri.png" width="289" alt="Yuri Hostins, Aluno do Cedup Herman Hering - 2022">
-						<figcaption><strong>desenvolveu o site</strong></figcaption>
+						<figcaption class="figcaption-tablet"><strong>desenvolveu o site</strong></figcaption>
 					</figure>	
-				</div>
+				
+				
+					<div id="social-servicos">
+                    	<button class="botao-redesocial"><a title="GitHub do Yuri" target="_blank" href="https://www.instagram.com/047_predo/"><i class="fa-brands fa-github"></i></a></button>
+               	 	</div>
+				</section>
 
+				<hr>
 
-				<div class="imagem">
-					<p class="texto_equipe"><strong><em>Pedro Ullrich:</em></strong></p>
+				<section class="imagem">
+					<p class="texto_equipe texto_equipe-tablet"><strong><em>Pedro</a> Ullrich:</em></strong></p>
 					<figure>
 						<img src="../img/pedro.png" alt="Pedro Ullrich, Aluno do Cedup Herman Hering - 2022">
-						<figcaption><strong>pesquisou o conteudo do site</strong></figcaption>
+						<figcaption class="figcaption-tablet"><strong>pesquisou o conteudo do site</strong></figcaption>
 					</figure>	
-				</div>
 				
-				<p class="fontes"><strong>fontes: <a class="link" target="_blank" href="https://mundoeducacao.uol.com.br">Mundo Educação</a>,<a class="link" target="_blank" href="https://segredosdomundo.r7.com"> Segredos do Mundo</a>.</strong></p>
+				
+					<div class="social-servicos">
+                    	<button class="botao-redesocial"><a title="instagram do Pedro" target="_blank" href="https://www.instagram.com/047_predo/"><i class="fa-brands fa-instagram"></i></a></button>
+               	 	</div>
+				</section>
+
+				<p class="fontes fontes-tablet"><strong>fontes: <a class="link" target="_blank" href="https://mundoeducacao.uol.com.br">Mundo Educação</a>,<a class="link" target="_blank" href="https://segredosdomundo.r7.com"> Segredos do Mundo</a>.</strong></p>
 
 			</div>
 		</section>
@@ -115,17 +128,29 @@
 		
 		<section id="servicos">
             <div>
-                <h2 class="titulo-principal"><strong><em>Serviços</em></strong></h2>
+                <h2 class="titulo-principal titulo-principal-tablet"><strong><em>Serviços</em></strong></h2>
             </div>
 
-			<p></p>
+			<div>
+				<p class="texto_servicos texto_servicos-tablet"><strong>caso você tenha interesse de fazer um site para sua empresa ou divulgar alguma coisa, entre em contrato comigo.</strong></p>
+			</div>
+
+			
+
+			<div class="page">
+				<div class="icon">
+					<a class="btn" target="_blank" href="https://www.instagram.com/dev.yuri21/"><i class="fab fa-instagram botao_rede-mobile botao_rede-tablet"></i></a>
+					<a class="btn" target="_blank" href="https://discord.gg/HM6gBczgXX"><i class="fab fa-discord botao_rede-mobile botao_rede-tablet"></i></a>
+					<a class="btn" target="_blank" href="https://github.com/Yuri-Hostins"><i class="fa-brands fa-github botao_rede-mobile botao_rede-tablet"></i></a>
+				</div>
+			</div>
 
         </section>
 
 		<hr>
 		
 		<div>
-			<h4 class="titulo-aviso"><strong><em>Caso de bugs entre em <a class="contato-link" href="contato.html">contato</a> conosco</em></strong></h4>
+			<h4 class="titulo-aviso titulo-aviso-tablet"><strong><em>Caso de bugs entre em <a class="contato-link" href="contato.html">contato</a> conosco</em></strong></h4>
 		</div>
 
 		<hr>
@@ -157,7 +182,7 @@
 						<div class="social-links">
 							<a class="link-footer" target="_blank" href="https://www.instagram.com/dev.yuri21/"><i class="fab fa-instagram"></i></a>
 							<a class="link-footer" target="_blank" href="https://discord.gg/HM6gBczgXX"><i class="fab fa-discord"></i></a>
-							<a class="link-footer" target="_blank" href="https://github.com/Yuri-Hostins"><i class="fab fa-github"></i></a>
+							<a class="link-footer" target="_blank" href="https://github.com/Yuri-Hostins"><i class="fa-brands fa-github"></i></a>
 						</div>
 					</div>
 				</div>				

@@ -44,12 +44,17 @@ body {
 }
 
 .slide-felicidade-mobile .link {
-  color: #fff;
+  color: #000;
   font-size: 36px;
 }
 
 .slide-filosofos .link{
   color: #fff;
+  font-size: 36px;
+}
+
+.slide-felicidade .link{
+  color: #000;
   font-size: 36px;
 }
 
