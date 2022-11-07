@@ -22,3 +22,28 @@
         display: block;
     }
 }
+
+/* parte desktop */ 
+
+@media screen and (min-width: 1440px) {
+
+    #social-servicos .botao-redesocial {
+        width: 58px;
+        height: 58px;
+    }
+  
+    .social-servicos .botao-redesocial {
+        width: 58px;
+        height: 58px;
+    }
+
+    .texto_servicos {
+        font-size: 22px;
+    }
+
+    .titulo-aviso {
+        font-size: 20px;
+    }
+
+    
+}

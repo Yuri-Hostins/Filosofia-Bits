@@ -96,3 +96,29 @@
         right: -0.1px;
     } 
 }
+
+/* parte desktop */
+
+@media screen and (min-width: 1440px) {
+
+    .modal {
+        background-color: #fcfcfc;
+        padding: 100px;
+    }
+
+    .texto-discord {
+        font-size: 18px;
+    }
+
+    .texto-contato {
+        font-size: 18px;
+    }
+
+    .label {
+        font-size: 22px;
+    }
+
+    .link-discord {
+        margin: 9px;
+    }
+}

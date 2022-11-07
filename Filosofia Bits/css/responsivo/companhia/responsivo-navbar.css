@@ -179,3 +179,36 @@
     }
 }
 
+/* parte desktop */ 
+
+@media screen and (min-width: 1440px) {
+    
+    .titulo-principal {
+      font-size: 27px;
+    }
+
+    .texto_sobre {
+      font-size: 24px;
+    }
+
+    .texto_equipe {
+      font-size: 24px;
+    }
+
+    figcaption {
+      font-size: 22px;
+    }
+
+    .fontes {
+      font-size: 22px
+    }
+
+    .botao-equipe {
+      line-height: 60px;
+      font-size: 20px;
+    }
+
+    .menu .navigation-navbar .link-navbar{
+      font-size: 29px;
+    }
+}
