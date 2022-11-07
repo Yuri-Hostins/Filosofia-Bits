@@ -99,7 +99,7 @@
 
 /* parte desktop */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
 
     .modal {
         background-color: #fcfcfc;
@@ -120,5 +120,30 @@
 
     .link-discord {
         margin: 9px;
+    }
+    
+    .container .titulo-h1 .titulo-span {
+        border: 10px solid white;
+        padding: 16px 16px;
+        display: inline-block;
+    }
+
+    .titulo-h1 {
+        font-size: 26px;
+    }
+
+    .main-image {
+        position: relative;
+        background-size: cover;
+        height: 800px;
+        overflow: hidden;
+    }
+    
+    .button {
+        font-size: 18px;
+    }
+
+    .cen {
+        font-size: 19px;
     }
 }
