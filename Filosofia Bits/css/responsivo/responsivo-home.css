@@ -1,6 +1,6 @@
 /*parte mobile */
 
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
     h1 {
         font-size: 22px;
     }
@@ -8,4 +8,26 @@
     p {
         font-size: 18px;
     }
-} 
+}
+
+/* parte laptop */
+
+@media screen and (max-width: 1440px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 24px;
+    }
+
+    .copyright {
+        font-size: 24px;
+    }
+
+}
