@@ -75,10 +75,7 @@
         padding: 80px;
     }
 
-    #fechar{
-	top: 10px;
-    	right: 10px;
-    }
+}
 
 @media screen and (max-width: 949px) {
     
@@ -93,10 +90,11 @@
     .modal {
         padding: 60px;
     }
+
     .fechar {
         top: -7px;
-        right: -4px;
-    }
+        right: -0.1px;
+    } 
 }
 
 /* parte desktop */
