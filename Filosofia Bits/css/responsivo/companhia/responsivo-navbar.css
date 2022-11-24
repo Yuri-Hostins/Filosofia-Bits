@@ -1,0 +1,214 @@
+/*parte mobile */
+
+@media screen and (max-width: 414px) {
+    .menu,
+    .social{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    #btn-menu,
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile.active{
+        height: calc(100vh - 77px);
+        visibility: visible;
+    }
+
+    .nav_hamburguer {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.7s;
+    }
+    
+    .nav_hamburguer .link_hamburguer {
+      display: block;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 30px;
+      color: #ccc;
+      font-size: 25px;
+    }
+    
+    #content {
+      padding: 20px;
+      transition: margin-left 0.7s;
+      overflow: hidden;
+      display: block;
+    }
+
+    i {
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .nav_hamburguer .link_hamburguer:hover {
+      color: #fff;
+      transition: 0.4s;
+    }
+    
+    .nav_hamburguer .close {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      margin-left: 50px;
+      font-size: 30px;
+    }
+    
+    .slide-companhia .link_hamburguer {
+      color: #fff;
+      font-size: 36px;
+    }
+    
+    
+}
+
+/* parte tablet */
+
+@media screen and (max-width: 949px) {
+    .menu,
+    .social{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    #btn-menu,
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile.active{
+        height: calc(100vh - 77px);
+        visibility: visible;
+    }
+
+    .nav_hamburguer-tablet {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.7s;
+      display: block;
+    }
+    
+    .nav_hamburguer-tablet .link_hamburguer-tablet {
+      display: block;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 30px;
+      color: #ccc;
+      font-size: 25px;
+      display: block;
+    }
+
+    #content {
+      padding: 20px;
+      transition: margin-left 0.7s;
+      overflow: hidden;
+      display: block;
+    }
+
+    i {
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .nav_hamburguer-tablet .link_hamburguer-tablet:hover {
+      color: #fff;
+      transition: 0.4s;
+    }
+    
+    .nav_hamburguer-tablet .close-tablet {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      margin-left: 50px;
+      font-size: 30px;
+       display: block;
+    }
+    
+    .slide-companhia-tablet .link_hamburguer-tablet {
+      color: #fff;
+      font-size: 36px;
+    }
+    
+    .titulo-principal-tablet {
+      font-size: 30px;
+    }
+
+    .texto_sobre-tablet {
+      font-size: 26px;
+    }
+
+    .texto_equipe-tablet {
+      font-size: 26px;
+    }
+
+    .fontes-tablet{
+      font-size: 23px;
+    }
+
+    .figcaption-tablet {
+      font-size: 24px;
+    }
+
+    .titulo-aviso-tablet {
+      font-size: 26px;
+    }
+}
+
+/* parte desktop */ 
+
+@media screen and (min-width: 1440px) {
+    
+    .titulo-principal {
+      font-size: 27px;
+    }
+
+    .texto_sobre {
+      font-size: 24px;
+    }
+
+    .texto_equipe {
+      font-size: 24px;
+    }
+
+    figcaption {
+      font-size: 22px;
+    }
+
+    .fontes {
+      font-size: 22px
+    }
+
+    .botao-equipe {
+      line-height: 60px;
+      font-size: 20px;
+    }
+
+    .menu .navigation-navbar .link-navbar{
+      font-size: 29px;
+    }
+}
