@@ -1,1 +1,1 @@
-# Filosofia-Bits
+Filosofia Bits
