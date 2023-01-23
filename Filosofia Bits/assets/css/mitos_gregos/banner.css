@@ -1,0 +1,264 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background-contato {
+    background: rgb(65, 64, 64);
+}
+
+.main-image {
+    position: relative;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container .titulo-h1 {
+    margin: 0;
+    font-size: 66px;
+}
+
+.container .titulo-h1 .titulo-span {
+    border: 6px solid black;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+    display: inline-table;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+
+
+
+
+/*parte mobile */
+
+@media screen and (max-width: 375px) {
+    
+    img {
+        width: 300px;
+    }
+    
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+
+    .button {
+        display: block;
+        padding: 1px;
+    }
+
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+   
+    img {
+        width: 200px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    .container .titulo-h1 {       
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+        padding: 4px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* parte tablet */
+
+@media screen and (max-width: 700px) {
+    img {
+        width: 200px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    .container .titulo-h1 {       
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+        padding: 4px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    img {
+        width: 200px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    .container .titulo-h1 {       
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+        padding: 4px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* parte desktop*/
+
+@media screen and (min-width: 1400px) {
+    p {
+        font-size: 22px;
+    }
+
+    .sub_titulo {
+        font-size: 24px;
+    }
+
+    .titulo-principal {
+        font-size: 27px;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    figcaption {
+        margin: 20px;
+        font-size: 22px
+    }
+
+    .main-image {
+        position: relative;
+        background-size: cover;
+        height: 800px;
+        overflow: hidden;
+    }
+    
+    .button {
+        font-size: 18px;
+    }
+
+    .cen {
+        font-size: 19px;
+    }
+
+    .titulo-h1 {
+        font-size: 26px;
+    }
+
+    .container .titulo-h1 .titulo-span {
+        border: 10px solid black;
+        padding: 16px 16px;
+        display: inline-block;
+    }
+
+    .footer-col .titulo-footer {
+        font-size: 24px;
+    }
+
+    .footer-col .list-footer .item-footer .link-footer {
+        font-size: 22px;
+    }
+
+    .copyright {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .creditos-medusa {
+        font-size: 16px;
+    }
+    
+    .footer-col .social-links .link-footer {
+        height: 60px;
+	    width: 60px;
+        margin:0 20px 20px 0;
+        line-height: 60px;
+        font-size: 22px;
+    }
+}

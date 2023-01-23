@@ -1,0 +1,418 @@
+/* Importar Sanatize para redefinir os padrões do navegador - URL curto (http://srt.lt/Q6P0nY) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css');
+
+/* Importar Roboto e Roboto-slab do Google Fonts - URL curto (http://srt.lt/b4tY7) */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300');
+
+/* Importar fonte incrível - URL curto(http://srt.lt/p2b4) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box; /* Colocar preenchimento no interior dos elementos */
+}
+
+body {
+	font-family: 'Montserrat';
+	font-size: 16px; /* Nosso tamanho de fonte básico */
+	line-height: 1.75; /* A altura da linha assume um valor quase rem, mas é dinâmica para o tamanho da fonte */
+	font-weight: 300; /* Use o peso incluído */
+	color: #332F21; /* Não use preto é muito duro */
+
+	display: flex; /* Definir o corpo para ser um contêiner flexível */
+	align-items: center; /* Centralizar verticalmente o conteúdo na janela de visualização */
+	justify-content: center; /* Centralizar horizontalmente o conteúdo na viewport */
+
+	min-height: 100vh; /* Força a centralização vertical, pois o conteúdo nem sempre será mais alto que a janela de visualização */
+	padding: 2rem; /* Usando valores rem, pois eles não cascateiam como unidades em e não são unidades fixas como pixels */
+
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('https://source.unsplash./random'); /* Várias imagens de plano de fundo, gradiente semitransparente usado como substituto para o Edge */
+	background-position: center center;
+	background-size: cover;
+}
+
+@supports(background-blend-mode: multiply) { /* Use um modo de mesclagem em segundo plano no navegador que o suporta */
+
+	body {
+		background-image: linear-gradient(#4A4A4A, #212121), url('../img/home/floresta.jpg'); /* Várias imagens de fundo, sobreposição de gradiente e a imagem */
+		background-blend-mode: multiply; /* Misturando o gradiente com a imagem de fundo (não pode usar preto para misturar) */
+	}
+
+}
+
+.fullscreen-menu__nav .active {
+	color: #332F21;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif; /* Use a fonte do google incluída como fonte de título */
+	font-weight: 700; /* Incluímos apenas 700 */
+	font-size: 2.25rem; /* 36px com base no tamanho da fonte base de 16px */
+	line-height: 1.3333; /* Com base em tamanho de fonte de 36px e altura de linha de 48px */
+}
+
+.card {
+	display: flex; /* Define o elemento de cartão inteiro para ser um contêiner flexível */
+	flex-direction: column; /* Forces elements to align along the vertical axis */
+
+	max-width: 62rem; /* Unidade de espaçamento base multiplicada por 35 */
+	min-height: 75vh; /* Sempre pelo menos 75% da janela de visualização */
+
+	background-color: white; /* Definir a cor de fundo do nosso cartão de conteúdo */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adicione uma sombra sutil */
+}
+
+	.card__image-container {
+		max-height: 15rem; /* Pare a imagem ficar muito grande */
+
+		background-image: url('../img/home/background-home.png');
+		background-size: cover; /* Forçar a imagem de fundo a cobrir o contêiner */
+		background-position: center center; /* Posicione a imagem no meio */
+	}
+
+	.card__image {
+		opacity: 0; /* Esconda a imagem na página, precisamos do DOM para renderizá-la para que tenhamos dois elementos com conteúdo no cartão */
+		pointer-events: none; /* Permite que a imagem seja clicada */
+	}
+
+	.card__contents {
+		display: flex; /* Tornar o elemento um contêiner flexível */
+		flex-direction: column; /* Alinhar elementos ao longo do eixo vertical */
+
+		padding: 2rem;
+	}
+
+	.card__header,
+	.card__footer {
+		flex: 0 0 auto; /* Não cresça, não diminua, tamanho automático (base) */
+	}
+
+	.card__footer {
+		margin-top: 2rem; /* Crie um pouco de espaço entre o conteúdo e o rodapé */
+		text-align: right; /* Alinhar o conteúdo do rodapé à direita */
+	}
+
+	.card__body {
+		flex: 1 1 auto; /* O mesmo que flex:1; */
+	}
+
+	/* As propriedades flexíveis do cabeçalho, rodapé e corpo do cartão permitem que o rodapé esteja sempre na parte inferior do contêiner */
+
+	.card__title {
+		margin-top: 0; /* Remova a margem, pois não há elementos acima dela */
+	}
+
+@media only screen and (min-width: 53rem) { /* Unidade de espaçamento base * 30 */
+
+	.card {
+		flex-direction: row; /* Alinhar itens ao longo do eixo horizontal */
+		min-height: 60vh;
+	}
+
+		.card__image-container {
+			flex: 0 1 45%; /* Não crescer, encolher, 45% de largura (base) */
+			max-height: inherit; /* Redefinir o conjunto de altura máxima para dispositivos móveis */
+		}
+
+		.card__contents {
+			flex: 1 1 55%; /* Crescer, Encolher, 55% de largura */
+			padding: 3rem; /* Aumente o preenchimento agora temos mais espaço para brincar */
+		}
+
+}
+
+
+
+/* Ícones sociais baseados em: codepen.io/matchboxhero/pen/onzkC */
+
+[class^="icon--"] {
+    font-family: 'FontAwesome'; /* Aplicar fonte do ícone */
+    font-style: normal; /* Remove o itálico padrão */
+}
+
+[class^="social-button"] {
+   	display: inline-flex; /* Exibir elementos inline, mas transformá-los em um contêiner flexível */
+	align-items: center; /* Alinhar centralmente as crianças verticalmente */
+	justify-content: center; /* Alinhar centralmente as crianças horizontalmente */
+
+   	height: 3rem; /* Criar quadrado */
+    width: 3rem; /* Criar quadrado */
+
+   	font-size: 1.4rem; /* Aumente o tamanho da fonte padrão */
+    color: white; /* Tornar o ícone branco */
+    border-radius: 50%; /* Criar círculo */
+
+    text-decoration: none; /* Remover sublinhado padrão */
+
+    transition: background-color 150ms ease-in-out; /* Cor de fundo de transição ao passar o mouse */
+
+    margin-right: 0.1rem;
+}
+
+.icon--instagram::before {
+    content: '\f099'; /* Valor Unicode para o ícone do Instagram em nossa fonte de ícone escolhida */
+}
+
+.icon--discord::before {
+    content: '\f09a'; /* Valor Unicode para o ícone do Discord em nossa fonte de ícone escolhida */
+}
+
+.icon--github::before {
+    content: '\f231'; /* Valor Unicode para o ícone do GitHub em nossa fonte de ícone escolhida */
+}
+
+.social-button--instagram {
+    background-color: #FF69B4; /* cor do instagram	 */
+}
+
+.social-button--instagram:hover {
+    background-color: #FF1493; /* cor de hover do instagram */
+}
+
+.social-button--discord {
+    background-color: #4b70ab; /* cor do Discord */
+}
+
+.social-button--discord:hover {
+    background-color: #3f5f91; /* cor de hover do discord */
+}
+
+.social-button--github {
+    background-color: #252525; /* cor github */
+}
+
+.social-button--github:hover {
+    background-color: #000000; /* cor de hover do discord */
+}
+
+
+.copyright {
+	font-size: 13px;
+}
+
+
+/*
+
+	Iniciar novo código para o menu
+
+*/
+
+/* botão de menu */
+
+.menu-button {
+	display: flex; /* Exibir flex para centralizar o ícone do menu no botão */
+	justify-content: center; /* Alinhar horizontalmente */
+	align-items: center; /* Alinhar verticalmente */
+
+	width: 4rem; /* Largura do botão */
+	height: 4rem; /* Altura do botão */
+	border-radius: 50%; /* Faça do botão um círculo */
+	background-color: rgba(255,255,255,0.4); /* Deixe o fundo branco e semitransparente */
+	cursor: pointer;
+
+	transition: background-color 500ms ease-in-out; /* Adicionar transição para a cor de fundo */
+}
+
+.card__image-container .menu-button {
+	margin: 1.5rem;
+}
+
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:active {
+    background-color: rgba(0,0,0,0.8); /* Ao passar o mouse, faça a transição da cor de fundo e da transparência*/
+}
+
+.menu-icon {
+	position: relative; /* Dê a posição relativa do ícone do menu para que possamos posicionar absolutamente os filhos */
+    width: 2rem; /* Largura do ícone */
+	height: 1.5rem; /* Altura do ícone */
+}
+
+.menu-icon span {
+    position: absolute; /* Posicione absolutamente todos os filhos do ícone do menus */
+    height: 0.125rem; /* Altura de cada linha em nosso botão de menu */
+    width: 100%; /* Com de cada linha */
+    background-color: #332F21; /* Cor de fundo de cada linha */
+    transition: background-color 500ms ease-in-out; /* Transição adicionada para a cor de fundo */
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0.0625rem; /* Posicione a primeira linha a aproximadamente 1px do topo */
+}
+
+.menu-icon span:nth-child(2) {
+    top: 0.625rem; /* Posicione a segunda linha a aproximadamente 10px do topo, uma em cima da outra */
+}
+
+.menu-icon span:nth-child(3) {
+    top: 1.25rem; /* Posicione a quarta linha a aproximadamente 20px do topo */
+}
+
+.menu-button:hover span,
+.menu-button:focus span,
+.menu-button:active span {
+    background: white; /* Ao passar o mouse, torne a cor de fundo do ícone do menu branca */
+}
+
+/* Transforme o ícone do Menu em um ícone de fechamento  */
+
+.menu-icon.is-active span:nth-child(1) {
+    opacity: 0; /* Ocultar a primeira linha */
+}
+
+.menu-icon.is-active span:nth-child(2) {
+    transform: rotate(45deg); /* Gire a segunda linha 45 graus */
+}
+
+.menu-icon.is-active span:nth-child(3) {
+	top: 0.625rem; /* Posicione a terceira linha sobre a segunda linha */
+    transform: rotate(-45deg); /* Gire a terceira linha -45 graus */
+}
+
+/* Menu de tela cheia */
+
+.fullscreen-menu-container {
+	position: fixed; /* Corrigir o menu para a janela de visualização */
+	top: 12.5rem; /* Adicione o valor superior para permitir que o elemento seja animado sobre */
+	left: 0; /* Posição à esquerda da viewport */
+	z-index: 5; /* Adicione z-index para garantir que o elemento esteja sempre acima de tudo */
+	width: 100vw; /* Cubra toda a largura da janela de visualização */
+	height: 100vh; /* Cubra toda a altura da janela de visualização */
+	overflow: scroll; /* Permitir a rolagem quando o conteúdo for maior que a janela de visualização */
+
+	background-color: rgba(255,255,255,0.95); /* Fundo branco semitransparente para a sobreposição de menu */
+
+	opacity: 0; /* Aplique 0 transparência para ocultar a sobreposição ao carregar */
+	pointer-events: none; /* Impedir que os elementos no contêiner de menu sejam clicados */
+
+	transition: top 500ms ease-in, opacity 300ms ease-in; /* Transição do topo e da opacidade */
+}
+
+.fullscreen-menu-container.is-open {
+	opacity: 1; /* Opacidade de transição de 0 a 1 */
+	top: 0; /* Transição para o topo da viewport */
+	pointer-events: auto; /* Re-adicionar eventos de ponteiro aos elementos podem ser clicados novamente */
+}
+
+.fullscreen-menu-container .menu-button {
+	position: absolute; /* Posicione o botão absolutamente no contêiner da imagem */
+	top: 1.5rem; /* Botão de posição a partir do topo */
+	right: 1.5rem; /* Botão de posição da esquerda */
+}
+
+.fullscreen-menu {
+	text-align: center; /* Aplicar centro de alinhamento de texto a todos os filhos */
+	max-width: 62rem; /* Largura máxima do conteúdo */
+	padding: 6rem 2rem 4rem; /* Adicione preenchimento ao conteúdo, grande na parte superior para permitir o botão Fechar */
+	width: 100%; /* Onde puder, estique até a largura máxima, caso contrário, a janela de visualização completa */
+}
+
+	.fullscreen-menu__image-container {
+		width: 5rem; /* Fazer quadrado */
+		height: 5rem; /* Fazer quadrado */
+		border-radius: 50%; /* Transforme o quadrado em um círculo */
+		background-image: url('../img/home/Principais-Filosofos.jpg'); /* Aplique a imagem como plano de fundo */
+		background-size: cover; /* Forçar a imagem de fundo a cobrir o contêiner */
+		background-position: center center; /* Posicione a imagem no meio */
+		margin: 0 auto 1.5rem;
+	}
+
+	.fullscreen-menu__title {
+		max-width: 30rem; /* Aplique uma largura máxima diferente ao título para obter um comprimento de leitura mais ideal */
+		margin: 0 auto; /* Posicione no centro horizontal e remova as margens superior e inferior */
+	}
+
+	.fullscreen-menu__nav {
+		margin: 3rem 0; /* Aplicar margem superior e inferior da navegação */
+	}
+
+	.fullscreen-menu__nav ul {
+		list-style: none; /* Remova os pontos dos itens da lista */
+		margin: 0; /* Remover margem padrão */
+		padding: 0; /* Remover preenchimento padrão */
+	}
+
+	.fullscreen-menu__nav a {
+		display: block; /* Espalhe toda a largura */
+		font-size: 1.4rem; /* Aumente o tamanho da fonte padrão */
+		padding: 1rem; /* Adicione preenchimento ao botão para aumentar a área de clique/toque */
+		color: #A2A2A2; /* Aplique a cor cinza claro */
+		text-decoration: none; /* Remover sublinhado padrão */
+		transition: color 300ms ease-in; /* Adicionar transição para a cor ao passar o mouse */
+	}
+
+	.fullscreen-menu__nav a:hover,
+	.fullscreen-menu__nav a:focus,
+	.fullscreen-menu__nav a:active {
+		color: #332F21; /* Escurecer a cor do texto ao passar o mouse */
+	}
+
+.fullscreen-menu [class^="social-button"] {
+	margin: 0 0.5rem; /* Adicione uma margem maior entre os botões sociais na sobreposição do menu */
+	height: 3.75rem; /* Aumente o tamanho dos botões sociais */
+    width: 3.75rem; /* Aumente o tamanho dos botões sociais */
+    font-size: 1.5rem; /* Aumente o tamanho do ícone social dentro do botão */
+}
+
+@media only screen and (min-width: 46rem) { /* Quando a janela de visualização é grande o suficiente */
+
+	.fullscreen-menu-container {
+		display: flex; /* Adicionar flex de exibição ao contêiner */
+		justify-content: center; /* Alinhar o conteúdo do menu ao centro horizontalmente */
+		align-items: center; /* Alinhar o conteúdo do menu ao centro verticalmente */
+	}
+
+	.fullscreen-menu {
+		padding: 0;
+	}
+
+	.fullscreen-menu__nav {
+		margin: 4rem 0; /* Aumente a margem entre a navegação e outros elementos no menu */
+	}
+
+		.fullscreen-menu__nav ul {
+			display: flex; /* Transforme a lista não ordenada em um contêiner flexível */
+			justify-content: space-between; /* Compartilhe o espaço disponível entre os itens da lista */
+		}
+
+}
+
+
+
+
+
+/*parte mobile */
+
+@media screen and (max-width: 390px) {
+	h1 {
+			font-size: 22px;
+	}
+
+	p {
+			font-size: 18px;
+	}
+}
+
+/* parte laptop */
+
+@media screen and (min-width: 1400px) {
+
+	h1 {
+			font-size: 26px;
+	}
+
+	p {
+			font-size: 22px;
+	}
+
+	a {
+			font-size: 24px;
+	}
+
+	.copyright {
+			font-size: 24px;
+	}
+
+}
