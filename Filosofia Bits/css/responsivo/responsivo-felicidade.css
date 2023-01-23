@@ -1,0 +1,156 @@
+/*parte mobile */
+
+@media screen and (max-width: 390px) {
+   
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+   
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+/* parte tablet */
+
+@media screen and (max-width: 700px) {
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .container .titulo-h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    
+    .container .titulo-h1 .titulo-span{
+        border: 0;
+    }
+
+    .slide-felicidade-mobile .link {
+        color: #000;
+    }
+
+    .button {
+        display: block;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+/* parte desktop */ 
+
+@media screen and (min-width: 1400px) {
+    
+    p {
+        font-size: 22px;
+    }
+
+    .sub_titulo {
+        font-size: 24px;
+    }
+
+    .titulo-felicidade {
+        font-size: 27px;
+    }
+
+
+    .main-image {
+        position: relative;
+        background-size: cover;
+        height: 800px;
+        overflow: hidden;
+    }
+    
+    .button {
+        font-size: 18px;
+    }
+
+    .cen {
+        font-size: 19px;
+    }
+
+    .titulo-h1 {
+        font-size: 26px;
+    }
+
+    .container .titulo-h1 .titulo-span {
+        border: 10px solid black;
+        padding: 16px 16px;
+        display: inline-block;
+    }
+
+    .footer-col .titulo-footer {
+        font-size: 24px;
+    }
+
+    .footer-col .list-footer .item-footer .link-footer {
+        font-size: 22px;
+    }
+
+    .copyright {
+        font-size: 18px;
+    }
+    
+    .footer-col .social-links .link-footer {
+        height: 60px;
+	    width: 60px;
+        margin:0 20px 20px 0;
+        line-height: 60px;
+        font-size: 22px;
+    }
+}
