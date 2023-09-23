@@ -1,4 +1,4 @@
-# Seu Projeto - Site de Filosofia e Mitologia Grega
+# FilosofiaBits - Site de Filosofia e Mitologia Grega
 
 > Status do projeto: Finalizado
 
